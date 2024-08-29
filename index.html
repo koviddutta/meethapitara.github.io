@@ -1,51 +1,227 @@
-<!-- About Us Section -->
-<div class="about-us">
-    <div class="container">
-        <h2>Our Sweet Story</h2>
-        <p>At MeethaPitara, we believe in bringing together the best of both worlds—traditional Indian flavors and modern artisanal gelato-making techniques. Our journey started with a simple dream: to create unforgettable moments through every scoop, capturing the essence of Indian culinary heritage infused with a modern twist.</p>
-        <p>Our gelato is more than just a dessert; it's a heartfelt celebration of the rich, diverse flavors that define India. Each scoop is crafted with passion and precision, designed to transport you to a world of sweet memories, where nostalgia meets innovation.</p>
-        <div class="about-us-image">
-            <img src="https://images.unsplash.com/photo-1556912991-ef77e35a7f14?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Indian-inspired Gelato">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeethaPitara - Journey Through Sweet Memories</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            line-height: 1.6;
+            background-color: #F3F4E4;
+            color: #0C0B0B;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #0F009B;
+            color: #FBD200;
+            text-align: center;
+            padding: 40px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        h1 {
+            font-family: 'League Spartan', sans-serif;
+            font-size: 4em;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.8em;
+            color: #F26716;
+        }
+
+        /* Coming Soon Section */
+        .coming-soon {
+            background: linear-gradient(135deg, #F26716 40%, #FBD200);
+            color: #0C0B0B;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .coming-soon-content {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #0C0B0B;
+        }
+
+        .highlight-text {
+            font-family: 'League Spartan', sans-serif;
+            font-size: 2.5em;
+            color: #0F009B;
+            margin-bottom: 20px;
+        }
+
+        .coming-soon p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+        }
+
+        .countdown-timer {
+            font-size: 2em;
+            color: #3067EF;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #0F009B;
+            color: #F3F4E4;
+            padding: 15px 30px;
+            font-family: 'League Spartan', sans-serif;
+            font-size: 1.5em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #3067EF;
+        }
+
+        /* About Us Section */
+        .about-us {
+            background-color: #F3F4E4;
+            padding: 80px 20px;
+            text-align: center;
+            color: #0C0B0B;
+        }
+
+        .about-us .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-us h2 {
+            font-family: 'League Spartan', sans-serif;
+            font-size: 2.8em;
+            color: #0F009B;
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #0C0B0B;
+        }
+
+        .about-us-image {
+            margin-top: 40px;
+        }
+
+        .about-us-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0F009B;
+            color: #F3F4E4;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #F3F4E4;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>MeethaPitara</h1>
+        <div class="tagline">Journey Through Sweet Memories</div>
+    </header>
+
+    <!-- Coming Soon Section -->
+    <div class="coming-soon">
+        <div class="coming-soon-content">
+            <h2 class="highlight-text">Get Ready for a Sweet Revolution!</h2>
+            <p>We’re bringing the magic of Indian-inspired gelato to you this October. Stay tuned for a taste of nostalgia and innovation, where every scoop tells a story.</p>
+            <div class="countdown-timer" id="countdown"></div>
+            <a href="#" class="cta-button">Notify Me at Launch</a>
         </div>
     </div>
-</div>
 
-<!-- CSS -->
-<style>
-.about-us {
-    background-color: #F3F4E4;
-    padding: 80px 20px;
-    text-align: center;
-    color: #0C0B0B;
-}
+    <!-- About Us Section -->
+    <div class="about-us">
+        <div class="container">
+            <h2>Our Sweet Story</h2>
+            <p>At MeethaPitara, we believe in bringing together the best of both worlds—traditional Indian flavors and modern artisanal gelato-making techniques. Our journey started with a simple dream: to create unforgettable moments through every scoop, capturing the essence of Indian culinary heritage infused with a modern twist.</p>
+            <p>Our gelato is more than just a dessert; it's a heartfelt celebration of the rich, diverse flavors that define India. Each scoop is crafted with passion and precision, designed to transport you to a world of sweet memories, where nostalgia meets innovation.</p>
+            <div class="about-us-image">
+                <img src="https://images.unsplash.com/photo-1556912991-ef77e35a7f14?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Indian-inspired Gelato">
+            </div>
+        </div>
+    </div>
 
-.about-us .container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <p>&copy; 2024 MeethaPitara. All rights reserved.</p>
+    </footer>
 
-.about-us h2 {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 2.8em;
-    color: #0F009B;
-    margin-bottom: 20px;
-}
+    <!-- JavaScript for Countdown Timer -->
+    <script>
+        const countdownElement = document.getElementById('countdown');
+        const launchDate = new Date('2024-10-01T00:00:00').getTime(); // Set launch date
 
-.about-us p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    color: #0C0B0B;
-}
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeDifference = launchDate - now;
 
-.about-us-image {
-    margin-top: 40px;
-}
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-.about-us-image img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-</style>
+            countdownElement.innerHTML = `Launching in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            if (timeDifference < 0) {
+                countdownElement.innerHTML = "We're Live Now!";
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

@@ -1,255 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MeethaPitara - Journey Through Sweet Memories</title>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
-    <style>
-        /* Reset and Basic Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Trebuchet MS', sans-serif;
-            line-height: 1.6;
-            background-color: #F3F4E4;
-            color: #0C0B0B;
-        }
-        a {
-            text-decoration: none;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Header */
-        header {
-            background-color: #0F009B;
-            color: #FBD200;
-            text-align: center;
-            padding: 40px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        h1 {
-            font-family: 'League Spartan', sans-serif;
-            font-size: 4em;
-            margin-bottom: 10px;
-        }
-
-        .tagline {
-            font-family: 'Pacifico', cursive;
-            font-size: 1.8em;
-            color: #F26716;
-        }
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-            height: 100vh;
-            background: url('https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2100&q=80') no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #F3F4E4;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-        }
-
-        .hero-content {
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-family: 'League Spartan', sans-serif;
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #F26716;
-            color: #F3F4E4;
-            padding: 15px 30px;
-            font-family: 'League Spartan', sans-serif;
-            font-size: 1.5em;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        .cta-button:hover {
-            background-color: #3067EF;
-        }
-
-        /* Flavor Showcase */
-        .flavor-showcase {
-            background-color: #fff;
-            padding: 60px 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-        }
-
-        .flavor-card {
-            background-color: #F3F4E4;
-            width: 280px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .flavor-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-        }
-
-        .flavor-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .flavor-card h3 {
-            font-family: 'League Spartan', sans-serif;
-            color: #0F009B;
-            margin-top: 15px;
-        }
-
-        /* About Section */
-        .about {
-            background-color: #FBD200;
-            padding: 80px 20px;
-            text-align: center;
-            color: #0C0B0B;
-        }
-
-        .about h2 {
-            font-family: 'League Spartan', sans-serif;
-            color: #0F009B;
-            margin-bottom: 20px;
-            font-size: 2.5em;
-        }
-
-        .about p {
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: 0 auto 40px;
-        }
-
-        /* Early Bird Offer Section */
-        .early-bird {
-            background-color: #0F009B;
-            color: #F3F4E4;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .early-bird h2 {
-            font-family: 'League Spartan', sans-serif;
-            margin-bottom: 20px;
-            font-size: 2.2em;
-        }
-
-        .subscribe-button {
-            background-color: #F26716;
-            color: #F3F4E4;
-            padding: 15px 30px;
-            border: none;
-            font-size: 1.5em;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .subscribe-button:hover {
-            background-color: #3067EF;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0F009B;
-            color: #F3F4E4;
-            text-align: center;
-            padding: 40px 0;
-            margin-top: 40px;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 20px;
-        }
-
-        .footer-links a {
-            color: #F3F4E4;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>MeethaPitara</h1>
-        <div class="tagline">Journey Through Sweet Memories</div>
-    </header>
-
-    <!-- Hero Section -->
-    <div class="hero">
-        <div class="hero-content">
-            <h2>Discover the Magic of Indian-Inspired Gelato</h2>
-            <a href="#" class="cta-button">Join Our Launch List</a>
-        </div>
-    </div>
-
-    <!-- Flavor Showcase Section -->
-    <div class="container flavor-showcase">
-        <!-- Flavor Card 1 -->
-        <div class="flavor-card">
-            <img src="https://images.unsplash.com/photo-1556912991-ef77e35a7f14?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chai Latte Swirl">
-            <h3>Chai Latte Swirl</h3>
-            <p>Experience the warmth of spiced tea in a cool, creamy scoop.</p>
-        </div>
-        <!-- Flavor Card 2 -->
-        <div class="flavor-card">
-            <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Rose Petal Dream">
-            <h3>Rose Petal Dream</h3>
-            <p>Delicate rose flavors that bloom with every bite.</p>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <div class="about">
+<!-- About Us Section -->
+<div class="about-us">
+    <div class="container">
         <h2>Our Sweet Story</h2>
-        <p>Step into the enchanting world of MeethaPitara, where every scoop is a portal to cherished memories. Our mission is to take you on a delectable journey back in time, where the flavors and traditions of India come alive in each bite...</p>
-        <a href="#" class="cta-button">Learn More</a>
-    </div>
-
-    <!-- Early Bird Offer Section -->
-    <div class="early-bird">
-        <h2>Early Bird Offer!</h2>
-        <p>Sign up now and be the first to taste the magic of MeethaPitara.</p>
-        <button class="subscribe-button">Subscribe Now</button>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Contact Us</a>
+        <p>At MeethaPitara, we believe in bringing together the best of both worlds—traditional Indian flavors and modern artisanal gelato-making techniques. Our journey started with a simple dream: to create unforgettable moments through every scoop, capturing the essence of Indian culinary heritage infused with a modern twist.</p>
+        <p>Our gelato is more than just a dessert; it's a heartfelt celebration of the rich, diverse flavors that define India. Each scoop is crafted with passion and precision, designed to transport you to a world of sweet memories, where nostalgia meets innovation.</p>
+        <div class="about-us-image">
+            <img src="https://images.unsplash.com/photo-1556912991-ef77e35a7f14?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Indian-inspired Gelato">
         </div>
-        <p>&copy; 2024 MeethaPitara. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+    </div>
+</div>
+
+<!-- CSS -->
+<style>
+.about-us {
+    background-color: #F3F4E4;
+    padding: 80px 20px;
+    text-align: center;
+    color: #0C0B0B;
+}
+
+.about-us .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.8em;
+    color: #0F009B;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #0C0B0B;
+}
+
+.about-us-image {
+    margin-top: 40px;
+}
+
+.about-us-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+</style>

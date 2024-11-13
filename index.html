@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MeethaPitara - Journey Through Sweet Memories</title>
+    <title>MeethaPitara - Premium Indian-Inspired Gelato</title>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Trebuchet+MS&display=swap" rel="stylesheet">
     <style>
         /* Reset and Basic Styles */
         * {
@@ -15,9 +16,8 @@
         body {
             font-family: 'Trebuchet MS', sans-serif;
             line-height: 1.6;
-            background: url('colorful-abstract-textured-background-design.jpg') no-repeat center center fixed; /* New Background */
-            background-size: cover;
-            color: #FFFFFF; /* White Text */
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            color: #333333;
         }
         a {
             text-decoration: none;
@@ -27,130 +27,202 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: rgba(15, 0, 155, 0.8); /* Semi-transparent blue background for readability */
-            border-radius: 10px;
         }
 
         /* Header */
         header {
-            background-color: rgba(15, 0, 155, 0.8); /* Semi-transparent blue */
+            background-color: #0F009B;
             color: #FBD200;
             text-align: center;
-            padding: 20px 0;
+            padding: 30px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            margin-bottom: 20px;
-            border-radius: 0 0 10px 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .logo {
-            max-width: 200px;
-            margin: 0 auto;
-            display: block;
+            max-width: 150px;
+            margin-bottom: 10px;
         }
 
         .tagline {
             font-family: 'Pacifico', cursive;
-            font-size: 1.8em;
-            color: #FFFFFF; /* White tagline */
+            font-size: 2em;
         }
 
-        /* Coming Soon Section */
-        .coming-soon {
-            background-color: rgba(15, 0, 155, 0.8); /* Semi-transparent blue */
-            color: #FFFFFF; /* White text */
-            padding: 100px 20px;
+        /* Hero Section */
+        .hero {
+            background: url('hero-background.jpg') no-repeat center center/cover;
+            color: #FFFFFF;
             text-align: center;
+            padding: 150px 20px;
             position: relative;
-            overflow: hidden;
-            margin-bottom: 20px;
-            border-radius: 10px;
+            margin-bottom: 40px;
         }
 
-        .coming-soon-content {
-            max-width: 700px;
+        .hero-content {
+            max-width: 800px;
             margin: 0 auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
         }
 
         .highlight-text {
             font-family: 'League Spartan', sans-serif;
-            font-size: 2.5em;
-            color: #F26716; /* Orange for emphasis */
+            font-size: 3em;
+            color: #F26716;
             margin-bottom: 20px;
         }
 
-        .coming-soon p {
-            font-size: 1.3em;
-            margin-bottom: 40px;
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
         }
 
         .cta-button {
-            background-color: #F26716; /* Orange button */
-            color: #FFFFFF; /* White text */
-            padding: 15px 30px;
+            background-color: #F26716;
+            color: #FFFFFF;
+            padding: 15px 40px;
             font-family: 'League Spartan', sans-serif;
             font-size: 1.5em;
             border-radius: 5px;
-            transition: background-color 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         }
 
         .cta-button:hover {
-            background-color: #FFFFFF; /* White hover */
-            color: #F26716; /* Orange text */
+            background-color: #FFFFFF;
+            color: #F26716;
+            transform: translateY(-5px);
         }
 
         /* About Us Section */
         .about-us {
-            background-color: rgba(15, 0, 155, 0.8); /* Use same semi-transparent blue background */
-            padding: 80px 20px;
+            background-color: #F3F4E4;
+            padding: 100px 20px;
             text-align: center;
-            color: #FFFFFF; /* White text */
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-
-        .about-us .container {
-            max-width: 1000px;
-            margin: 0 auto;
+            color: #333333;
+            margin-bottom: 40px;
         }
 
         .about-us h2 {
             font-family: 'League Spartan', sans-serif;
-            font-size: 2.8em;
-            color: #F26716; /* Orange color for heading */
-            margin-bottom: 20px;
+            font-size: 3em;
+            color: #F26716;
+            margin-bottom: 30px;
         }
 
         .about-us p {
             font-size: 1.3em;
             line-height: 1.8;
             max-width: 800px;
-            margin: 0 auto 30px;
+            margin: 0 auto 40px;
+        }
+
+        .about-us img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Product Showcase Section */
+        .product-showcase {
+            background-color: #FFFFFF;
+            padding: 100px 20px;
+            text-align: center;
+            color: #333333;
+            margin-bottom: 40px;
+        }
+
+        .product-showcase h2 {
+            font-family: 'League Spartan', sans-serif;
+            font-size: 3em;
+            color: #F26716;
+            margin-bottom: 30px;
+        }
+
+        .product-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .product-card {
+            background-color: #F3F4E4;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product-card h3 {
+            font-family: 'League Spartan', sans-serif;
+            font-size: 1.8em;
+            color: #F26716;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
         }
 
         /* Footer */
         footer {
-            background-color: rgba(15, 0, 155, 0.8);
+            background-color: #0F009B;
             color: #FFFFFF;
             text-align: center;
-            padding: 40px 0;
-            margin-top: 20px;
-            border-radius: 10px;
+            padding: 50px 0;
+            margin-top: 40px;
         }
 
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 40px;
             margin-bottom: 20px;
         }
 
         .footer-links a {
             color: #FFFFFF;
-            text-decoration: none;
-            font-size: 1.1em;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #F26716;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
@@ -158,12 +230,12 @@
     <!-- Header -->
     <header>
         <img src="IMG_5361.PNG" alt="Meetha Pitara Logo" class="logo">
-        <div class="tagline">Journey Through Sweet Memories</div>
+        <div class="tagline">A Journey Through Sweet Memories</div>
     </header>
 
-    <!-- Coming Soon Section -->
-    <div class="coming-soon">
-        <div class="coming-soon-content">
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
             <h2 class="highlight-text">Get Ready for a Sweet Revolution!</h2>
             <p>We’re bringing the magic of Indian-inspired gelato to you this October. Stay tuned for a taste of nostalgia and innovation, where every scoop tells a story.</p>
             <div class="countdown-timer" id="countdown"></div>
@@ -173,10 +245,30 @@
 
     <!-- About Us Section -->
     <div class="about-us">
-        <div class="container">
-            <h2>Our Sweet Story</h2>
-            <p>At MeethaPitara, we believe in bringing together the best of both worlds—traditional Indian flavors and modern artisanal gelato-making techniques. Our journey started with a simple dream: to create unforgettable moments through every scoop, capturing the essence of Indian culinary heritage infused with a modern twist.</p>
-            <p>Our gelato is more than just a dessert; it's a heartfelt celebration of the rich, diverse flavors that define India. Each scoop is crafted with passion and precision, designed to transport you to a world of sweet memories, where nostalgia meets innovation.</p>
+        <h2>Our Sweet Story</h2>
+        <p>At MeethaPitara, we believe in bringing together the best of both worlds—traditional Indian flavors and modern artisanal gelato-making techniques. Our journey started with a simple dream: to create unforgettable moments through every scoop, capturing the essence of Indian culinary heritage infused with a modern twist.</p>
+        <img src="our-story.jpg" alt="Our Sweet Story">
+    </div>
+
+    <!-- Product Showcase Section -->
+    <div class="product-showcase">
+        <h2>Our Flavors</h2>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="flavor1.jpg" alt="Kulfi Oreo">
+                <h3>Kulfi Oreo</h3>
+                <p>A delightful blend of traditional kulfi and the iconic Oreo crunch. A fusion of nostalgia and fun!</p>
+            </div>
+            <div class="product-card">
+                <img src="flavor2.jpg" alt="Jalebi Joy">
+                <h3>Jalebi Joy</h3>
+                <p>Experience the sweet and crispy magic of jalebi in a creamy, luxurious gelato.</p>
+            </div>
+            <div class="product-card">
+                <img src="flavor3.jpg" alt="Mumbai Chaat Surprise">
+                <h3>Mumbai Chaat Surprise</h3>
+                <p>A playful sorbet that brings you the tangy, spicy delight of Mumbai’s street chaat.</p>
+            </div>
         </div>
     </div>
 
@@ -186,6 +278,10 @@
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
             <a href="#">Contact Us</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
         </div>
         <p>&copy; 2024 MeethaPitara. All rights reserved.</p>
     </footer>
@@ -215,4 +311,3 @@
     </script>
 </body>
 </html>
-

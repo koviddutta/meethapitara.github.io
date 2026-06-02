@@ -1,0 +1,246 @@
+/* ============================================================
+   MeethaPitara — Colors & Type
+   "A pitara full of nostalgia."
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+/* Brand serif — Ezra (real font, full family: 300–900 + italics) */
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-Light.otf') format('opentype');          font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-LightItalic.otf') format('opentype');     font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-Regular.otf') format('opentype');         font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-Italic.otf') format('opentype');          font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-Medium.otf') format('opentype');          font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-MediumItalic.otf') format('opentype');    font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-SemiBold.otf') format('opentype');        font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-SemiBoldItalic.otf') format('opentype');  font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-Bold.otf') format('opentype');            font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-BoldItalic.otf') format('opentype');      font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-ExtraBold.otf') format('opentype');       font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-ExtraBoldItalic.otf') format('opentype'); font-weight: 800; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-Black.otf') format('opentype');           font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Ezra'; src: url('fonts/Ezra-BlackItalic.otf') format('opentype');     font-weight: 900; font-style: italic; font-display: swap; }
+
+/* Brand body sans — Avenir Book (real font, single 'Book' weight ≈ 400) */
+@font-face { font-family: 'Avenir Book'; src: url('fonts/Avenir_Book.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+
+:root {
+  /* ---------- BRAND COLOR PALETTE ---------- */
+  /* From official brand guideline sheet */
+
+  /* Core */
+  --mp-white:        #FFFFFF;          /* paper, base */
+  --mp-ink:          #231F20;          /* near-black, body ink */
+  --mp-blue:         #0D0195;          /* deep cobalt — primary brand color */
+  --mp-terracotta:   #CC6B46;          /* warm clay — primary brand color */
+  --mp-peach:        #D59282;          /* soft dusty peach — accent */
+  --mp-maroon:       #8F2A28;          /* deep mithai-box red — accent */
+
+  /* Extended warm earthy palette (derived from brand for surfaces) */
+  --mp-cream:        #F5EFE6;          /* warm off-white surface */
+  --mp-sand:         #EBE0CE;          /* khadi / paper surface */
+  --mp-oat:          #E6D6BE;          /* softer sand */
+  --mp-clay-tint:    #F3D9CC;          /* 20% terracotta over cream */
+  --mp-rose-tint:    #F1DED7;          /* 20% peach over cream */
+  --mp-forest:       #2D4A36;          /* foil green accent seen in patterns */
+  --mp-saffron:      #E8A54A;          /* warm gold (for edits / garnish accents) */
+  --mp-ink-soft:     #3B3436;          /* softened ink for body */
+  --mp-ink-mute:     #6E6366;          /* muted caption ink */
+  --mp-line:         #E2D6C2;          /* hairline on cream */
+
+  /* ---------- SEMANTIC SURFACE + INK ---------- */
+  --bg:              var(--mp-cream);
+  --bg-elevated:     var(--mp-white);
+  --bg-contrast:     var(--mp-ink);
+  --bg-accent-warm:  var(--mp-clay-tint);
+  --bg-accent-deep:  var(--mp-maroon);
+  --bg-accent-blue:  var(--mp-blue);
+
+  --fg:              var(--mp-ink);
+  --fg-soft:         var(--mp-ink-soft);
+  --fg-mute:         var(--mp-ink-mute);
+  --fg-inverse:      var(--mp-white);
+  --fg-accent:       var(--mp-terracotta);
+  --fg-accent-deep:  var(--mp-maroon);
+
+  --line:            var(--mp-line);
+  --line-strong:     rgba(35, 31, 32, 0.12);
+
+  /* ---------- TYPOGRAPHY ---------- */
+  /* Brand spec:
+        Primary:     BEBAS NEUE  — headings, titles  (display, UPPERCASE)
+        Secondary:   Ezra        — subheadings        (warm serif with character) — LIVE, full family 300–900 + italics
+        Supporting:  Avenir Book — body copy          (humanist sans) — LIVE (single 'Book' weight; bold is synthesized)
+  */
+  --font-display:   'Bebas Neue', 'Impact', sans-serif;
+  --font-serif:     'Ezra', 'Cormorant Garamond', Georgia, serif;
+  --font-body:      'Avenir Book', 'Nunito Sans', 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-devanagari:'Ezra', 'Noto Serif Devanagari', serif;
+
+  /* Type scale — editorial, generous */
+  --t-display-xl:   clamp(72px, 10vw, 148px);    /* hero numerals / giant headlines */
+  --t-display-lg:   clamp(56px, 7vw, 96px);
+  --t-display-md:   clamp(40px, 5vw, 72px);
+  --t-h1:           clamp(36px, 4vw, 56px);
+  --t-h2:           clamp(28px, 3vw, 40px);
+  --t-h3:           22px;
+  --t-h4:           18px;
+  --t-eyebrow:      13px;                          /* all-caps small label */
+  --t-body:         17px;
+  --t-body-sm:      15px;
+  --t-caption:      13px;
+
+  --lh-tight:       1.02;
+  --lh-display:     1.05;
+  --lh-heading:     1.15;
+  --lh-body:        1.55;
+  --lh-prose:       1.7;
+
+  --tr-tight:       -0.02em;
+  --tr-display:     0.005em;
+  --tr-caps:        0.16em;
+  --tr-caps-tight:  0.08em;
+
+  /* ---------- SPACING + RADII + SHADOWS ---------- */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  24px;
+  --sp-6:  32px;
+  --sp-7:  48px;
+  --sp-8:  64px;
+  --sp-9:  96px;
+  --sp-10: 128px;
+
+  --r-xs:  6px;
+  --r-sm:  10px;
+  --r-md:  16px;
+  --r-lg:  24px;
+  --r-xl:  32px;
+  --r-pill: 999px;
+
+  /* Soft, warm shadows — never harsh */
+  --sh-1: 0 1px 2px rgba(35,31,32,.06), 0 1px 1px rgba(35,31,32,.04);
+  --sh-2: 0 4px 14px rgba(35,31,32,.08), 0 2px 4px rgba(35,31,32,.04);
+  --sh-3: 0 12px 30px rgba(35,31,32,.10), 0 4px 10px rgba(35,31,32,.05);
+  --sh-4: 0 28px 60px rgba(143,42,40,.14), 0 10px 20px rgba(35,31,32,.06);
+  --sh-inset: inset 0 0 0 1px rgba(35,31,32,.06);
+
+  /* Motion */
+  --ease-soft: cubic-bezier(.22,.61,.36,1);
+  --ease-out:  cubic-bezier(.16,.84,.32,1);
+  --dur-fast:  160ms;
+  --dur-med:   260ms;
+  --dur-slow:  480ms;
+}
+
+/* ============================================================
+   SEMANTIC TYPE CLASSES
+   ============================================================ */
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.display, h1.display {
+  font-family: var(--font-display);
+  font-size: var(--t-display-lg);
+  line-height: var(--lh-display);
+  letter-spacing: var(--tr-display);
+  text-transform: uppercase;
+  color: var(--fg);
+}
+
+h1, .h1 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--t-h1);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--tr-tight);
+  color: var(--fg);
+  text-wrap: pretty;
+}
+
+h2, .h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--t-h2);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--tr-tight);
+  color: var(--fg);
+}
+
+h3, .h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--t-h3);
+  line-height: 1.25;
+  color: var(--fg);
+}
+
+h4, .h4 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--t-h4);
+  line-height: 1.3;
+  color: var(--fg);
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: var(--t-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-caps);
+  color: var(--fg-accent);
+}
+
+.kicker {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: var(--tr-caps);
+  color: var(--fg-mute);
+}
+
+p, .body {
+  font-family: var(--font-body);
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  color: var(--fg-soft);
+  text-wrap: pretty;
+}
+
+.body-lead {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.45;
+  color: var(--fg);
+}
+
+.caption {
+  font-family: var(--font-body);
+  font-size: var(--t-caption);
+  color: var(--fg-mute);
+  line-height: 1.5;
+}
+
+.hindi {
+  font-family: var(--font-devanagari);
+  font-weight: 500;
+}
+
+/* Hairline divider used often as editorial rule */
+.rule {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: var(--sp-6) 0;
+}
